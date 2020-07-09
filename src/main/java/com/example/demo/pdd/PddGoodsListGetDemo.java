@@ -18,13 +18,13 @@ public class PddGoodsListGetDemo {
          * https://open.pinduoduo.com/#/apidocument/port?portId=pdd.goods.list.get
          */
         PddGoodsListGetRequest request = new PddGoodsListGetRequest();
-        request.setOuterId("str");
-        request.setIsOnsale(0);
-        request.setGoodsName("str");
+//        request.setOuterId("str");
+//        request.setIsOnsale(0);
+//        request.setGoodsName("str");
         request.setPageSize(100);
         request.setPage(1);
-        request.setOuterGoodsId("str");
-        request.setCostTemplateId(0L);
+//        request.setOuterGoodsId("str");
+//        request.setCostTemplateId(0L);
         PddGoodsListGetResponse response = client.syncInvoke(request, PopClientBuilder.accessToken);
         System.out.println(JsonUtil.transferToJson(response));
 
